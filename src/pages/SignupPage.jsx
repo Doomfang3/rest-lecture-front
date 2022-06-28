@@ -34,12 +34,7 @@ const SignupPage = () => {
     <Box>
       <Title>Signup</Title>
       <form onSubmit={form.onSubmit(handleSubmit)}>
-        <InputWrapper
-          required
-          label='Username'
-          description='Your unique username'
-          {...form.getInputProps('username')}
-        >
+        <InputWrapper required label='Username' description='Your unique username'>
           <Input {...form.getInputProps('username')} />
         </InputWrapper>
         <InputWrapper required label='Password' description='Your password'>
